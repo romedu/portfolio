@@ -1,0 +1,20 @@
+.Loader {
+   display: inline-block;
+   margin: 10vh 46.5vw 0;
+   width: 7vw;
+   height: 7vw;
+   border-top: 0.5vh solid black;
+   border-bottom: 0.5vh solid black;
+   border-radius: 50%;
+   animation: spin 2s infinite;
+}
+
+@keyframes spin {
+   50% {
+      transform: rotate(180deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}

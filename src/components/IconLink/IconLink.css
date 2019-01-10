@@ -1,0 +1,29 @@
+.IconLink {
+   display: inline-block;
+   margin-right: 0.8vw;
+}
+
+.IconLink:hover img {
+   transform: scale(1.07);
+}
+
+.IconCircle {
+   border: 1px solid gray;
+   border-radius: 50%;
+   padding: 2vw;
+   box-shadow: 2px 2px rgb(102, 95, 95);
+}
+
+.IconCircle:hover {
+   border-color: black;
+}
+
+.Icon {
+   width: 7vh;
+   height: 7vh;
+}
+
+.BigIcon {
+   width: 7vw;
+   height: 7vw;
+}
