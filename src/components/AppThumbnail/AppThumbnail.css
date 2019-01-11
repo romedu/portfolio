@@ -29,5 +29,24 @@
 .AppLogo {
    width: 8vw;
    height: 8vw;
-   margin: 1vh 4vw
+   margin: 1vh 4vw;
+}
+
+@media (max-width: 849px){
+   .AppLink {
+      width: 70vw;
+      height: 70vw;
+      font-size: 1.3em;
+      padding-top: 6vh;
+   }
+
+   .AppThumbnail:last-child {
+      margin-bottom: 0;
+   }
+
+   .AppLogo {
+      width: 28vw;
+      height: 28vw;
+      margin: 2vh 21vw 0;
+   }
 }

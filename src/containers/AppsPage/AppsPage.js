@@ -47,8 +47,8 @@ class AppsPage extends Component {
                                                    </Fragment>;
 
       return (
-         <div>
-            <h2 className="AppsPage">
+         <div className="AppsPage" style={{height: isLoading && "100vh"}}>
+            <h2>
                {title}
             </h2>
             {isLoading ? <Loader /> : <AppsList list={appsList} />}

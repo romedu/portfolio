@@ -13,7 +13,7 @@ class AboutPage extends Component {
    componentDidMount(){
       fetch("https://geek-jokes.sameerkumar.website/api")
          .then(response => response.json())
-         .then(randomJoke => this.setState({randomJoke: multipleIncludes(randomJoke, "Chuck", "Norris", "&", "sex") ? undefined : randomJoke}))
+         .then(randomJoke => this.setState({randomJoke: multipleIncludes(randomJoke, "Chuck", "Norris", "&", "sex", "l41d") ? undefined : randomJoke}))
          .catch(error => {});
    }
 

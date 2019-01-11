@@ -17,7 +17,7 @@ const TechPage = props => {
          <div>
             <ContentsTable title="Technologies" items={technologies} />
             <ContentsTable title="Frameworks & Libraries" items={libraries} />
-            <ContentsTable title="Near Future" items={futurePlans} />
+            <ContentsTable title="Learning next" items={futurePlans} />
          </div>
          <ArrowLink url="/" direction="up" title="About Page" />
          <ArrowLink url="/my-projects/mpa" direction={width < 850 ? "down" : "left"} title="Multiple Page Apps" />

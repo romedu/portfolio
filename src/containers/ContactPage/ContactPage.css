@@ -1,0 +1,18 @@
+.ContactPage > div {
+   margin: 13vh auto 0;
+   width: 50%;
+   display: flex;
+   justify-content: space-around;
+}
+
+@media (max-width: 849px){
+   .ContactPage {
+      height: fit-content;
+      padding-bottom: none;
+   }
+
+   .ContactPage > div {
+      flex-direction: column;
+      margin-top: 0;
+   }
+}

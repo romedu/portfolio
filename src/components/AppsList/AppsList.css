@@ -1,0 +1,16 @@
+.AppsList {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 8vh auto 0;
+}
+
+@media (max-width: 849px){
+   .AppsList {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 70vw;
+      margin: 0 auto;
+      padding: 0;
+   }
+}

@@ -27,3 +27,15 @@
    width: 7vw;
    height: 7vw;
 }
+
+@media (max-width: 849px){
+   .Icon {
+      width: 10vh;
+      height: 10vh;
+      margin: 2vh 7vh;
+   }
+
+   .IconCircle {
+      margin-bottom: 5vh;
+   }
+}
