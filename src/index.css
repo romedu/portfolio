@@ -6,3 +6,9 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+@media (max-width: 849px){
+   body {
+      overflow-y: auto;
+   }
+}

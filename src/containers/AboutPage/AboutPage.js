@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import ArrowLink from "../../components/ArrowLink/ArrowLink";
 import Loader from "../../components/Loader/Loader";
 import {multipleIncludes} from "../../helpers";
+import "./AboutPage.css";
 
 class AboutPage extends Component {
    state = {
@@ -24,14 +25,14 @@ class AboutPage extends Component {
    render(){
       const {isLoading, randomJoke} = this.state,
             randomJokeBlock = randomJoke && (
-               <div style={{textAlign: "center", paddingTop: "15vh"}}>
+               <div className="JokeBlock">
                   <h3> Random joke: </h3>
                   {randomJoke}
                </div>
             );
 
       return (
-         <div className="CenterPage">
+         <div className="CenterPage AboutPage">
             <h1>
                Hello, my name is Roberto Meran
             </h1>

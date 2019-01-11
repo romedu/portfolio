@@ -34,3 +34,9 @@
    bottom: 0;
    right: 48%;
 }
+
+@media (max-width: 449px){
+   .up, .down {
+      right: 43.5%;
+   }
+}

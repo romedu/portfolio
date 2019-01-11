@@ -4,9 +4,10 @@ import ArrowLink from "../../components/ArrowLink/ArrowLink";
 import "./TechPage.css";
 
 const TechPage = props => {
-   const technologies = ["Javascript", "NodeJS", "CSS", "HTML", "MongoDB", "Java", "Firebase"],
+   const {availWidth: width} = window.screen,
+         technologies = ["Javascript", "NodeJS", "CSS", "HTML", "MongoDB", "Java", "Firebase", "MySQL"],
          libraries = ["React", "Redux", "Express", "Jquery", "Bootstrap", "SemanticUI"],
-         futurePlans = ["Spring", "GraphQL", "Relational Databases", "Mobile Development (React Native)", "Progressive Web Apps", "Webpack", "Elasticsearch"];
+         futurePlans = ["Spring", "GraphQL", "Mobile Dev", "PWA", "Webpack", "Elasticsearch"];
 
    return (
       <div className="CenterPage TechPage">
@@ -16,12 +17,12 @@ const TechPage = props => {
          <div>
             <ContentsTable title="Technologies" items={technologies} />
             <ContentsTable title="Frameworks & Libraries" items={libraries} />
-            <ContentsTable title="Future Plans / Work in progress" items={futurePlans} />
+            <ContentsTable title="Near Future" items={futurePlans} />
          </div>
          <ArrowLink url="/" direction="up" title="About Page" />
-         <ArrowLink url="/my-projects/mpa" direction="left" title="Multiple Page Apps" />
-         <ArrowLink url="/my-projects/spa" direction="right" title="Single Page Apps" />
-         <ArrowLink url="/contact" direction="down" title="Contact" />
+         <ArrowLink url="/my-projects/mpa" direction={width < 850 ? "down" : "left"} title="Multiple Page Apps" />
+         {width > 849 && <ArrowLink url="/my-projects/spa" direction="right" title="Single Page Apps" />}
+         {width > 849 && <ArrowLink url="/contact" direction="down" title="Contact" />}
       </div>
    )
 }

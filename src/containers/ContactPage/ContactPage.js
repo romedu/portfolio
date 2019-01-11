@@ -3,9 +3,11 @@ import ArrowLink from "../../components/ArrowLink/ArrowLink";
 import IconLink from "../../components/IconLink/IconLink";
 
 const ContactPage = props => {
+   const {availWidth: width} = window.screen;
+
    return (
       <div>
-         <ArrowLink url="/tech" direction="up" title="My Stack" />
+         <ArrowLink url={width > 849 ? "/tech" : "/my-projects/spa"} direction="up" title={width > 849 ? "My Stack" : "Multiple Page Apps"} />
          <h2 style={{fontSize: "2em"}}>
             Let's get in touch
          </h2>

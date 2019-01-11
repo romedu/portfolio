@@ -15,3 +15,13 @@
 h1, h2, h3 {
    text-align: center;
 }
+
+@media (max-width: 549px){
+   .App {
+      height: fit-content;
+   }
+
+   .App > div {
+      padding: 14.5vh 3vw 16vh;
+   }
+}

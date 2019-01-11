@@ -1,0 +1,10 @@
+.AppsPage {
+   margin-top: 0; 
+   font-size: 2em;
+}
+
+@media (max-width: 449px){
+   .AppsPage {
+      height: 69.5vh;
+   }
+}

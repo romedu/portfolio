@@ -1,0 +1,14 @@
+.JokeBlock {
+   text-align: center;
+   padding-top: 15vh;
+}
+
+@media (max-width: 449px){
+   .AboutPage {
+      height: 69.5vh;
+   }
+
+   .JokeBlock {
+      padding-top: 4vh;
+   }
+}

@@ -1,0 +1,16 @@
+.ContentsTable {
+   width: 30vw;
+}
+
+.ContentsTable ul {
+   width: fit-content;
+   margin: 0 auto;
+   padding: 0;
+}
+
+@media (max-width: 849px){
+   .ContentsTable {
+      width: 80vw;
+      margin-bottom: 2vh;
+   }
+}

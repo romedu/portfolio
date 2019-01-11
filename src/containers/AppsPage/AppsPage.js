@@ -1,8 +1,9 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 import FirebaseDB from "../../firebaseInstance";
 import AppsList from "../../components/AppsList/AppsList";
 import ArrowLink from "../../components/ArrowLink/ArrowLink";
 import Loader from "../../components/Loader/Loader";
+import "./AppsPage.css";
 
 class AppsPage extends Component {
    state = {
@@ -32,17 +33,27 @@ class AppsPage extends Component {
    }
 
    render(){
-      const {isLoading, appsList} = this.state,
+      const {availWidth: width} = window.screen,
+            {isLoading, appsList} = this.state,
             {appType} = this.props.match.params,
-            title = appType === "spa" ? "Single Page Apps" : "Multiple Page Apps";
+            title = appType === "spa" ? "Single Page Apps" : "Multiple Page Apps",
+            mobileArrowLinks = appType === "spa" ? <Fragment>
+                                                      <ArrowLink url="/my-projects/mpa" direction="up" title="Multiple Page Apps" />
+                                                      <ArrowLink url="/contact" direction="down" title="Contact" />
+                                                   </Fragment>
+                                                 : <Fragment>
+                                                      <ArrowLink url="/tech" direction="up" disabled={isLoading} title="My Stack" />
+                                                      <ArrowLink url="/my-projects/spa" direction="down" title="Single Page Apps" /> 
+                                                   </Fragment>;
 
       return (
          <div>
-            <h2 style={{marginTop: "0", fontSize: "2em"}}>
+            <h2 className="AppsPage">
                {title}
             </h2>
             {isLoading ? <Loader /> : <AppsList list={appsList} />}
-            <ArrowLink url="/tech" direction={appType === "spa" ? "left" : "right"} disabled={isLoading} title="My Stack" />
+            {width > 849 && <ArrowLink url="/tech" direction={appType === "spa" ? "left" : "right"} disabled={isLoading} title="My Stack" />}
+            {width < 849 && mobileArrowLinks}
          </div>
       )
    }
