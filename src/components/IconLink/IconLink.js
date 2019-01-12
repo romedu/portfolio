@@ -4,7 +4,7 @@ import "./IconLink.css";
 
 const IconLink = ({url, iconName, bigIcon}) => (
    <a href={url} className={`IconLink ${bigIcon && "IconCircle"}`} target="_blank" rel="noopener noreferrer">
-      <img className={`Icon ${bigIcon && "BigIcon"}`} src={images[iconName]} alt={iconName} />
+      <img className={bigIcon ? "BigIcon" : "Icon"} src={images[iconName]} alt={iconName} />
    </a>
 );
 

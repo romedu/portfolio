@@ -10,11 +10,11 @@ const TechPage = props => {
          futurePlans = ["Spring", "GraphQL", "Mobile Dev", "PWA", "Webpack", "Elasticsearch"];
 
    return (
-      <div className="CenterPage TechPage">
+      <div className="TechPage Container">
          <h2>
             This is how my tech stack looks like:
          </h2>
-         <div>
+         <div className="TableList">
             <ContentsTable title="Technologies" items={technologies} />
             <ContentsTable title="Frameworks & Libraries" items={libraries} />
             <ContentsTable title="Learning next" items={futurePlans} />

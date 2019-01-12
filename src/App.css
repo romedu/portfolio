@@ -8,7 +8,7 @@
    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App > div {
+.Container {
    padding: 18vh 0;
 }
 
@@ -21,7 +21,7 @@ h1, h2, h3 {
       height: fit-content;
    }
 
-   .App > div {
-      padding: 14.5vh 3vw 16vh;
+   .Container:last-of-type {
+      padding-bottom: 7vh;
    }
 }

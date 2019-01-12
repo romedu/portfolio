@@ -32,7 +32,7 @@ class AboutPage extends Component {
             );
 
       return (
-         <div className="CenterPage AboutPage">
+         <div className="AboutPage Container">
             <h1>
                Hello, my name is Roberto Meran
             </h1>

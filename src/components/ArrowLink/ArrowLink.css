@@ -1,5 +1,36 @@
-.ArrowLink {
+.ArrowContainer {
    position: fixed;
+   text-align: center;
+}
+
+.left {
+   left: 0;
+}
+
+.right {
+   right: 0;
+}
+
+.left, .right {
+   top: 40%;
+   width: fit-content;
+}
+
+.up {
+   top: 0;
+}
+
+.down {
+   bottom: 0;
+}
+
+.up, .down {
+   left: 0;
+   width: 100vw;
+   height: fit-content;
+}
+
+.ArrowLink {
    font-size: 6em;
    font-weight: bold;
    opacity: 0.5;
@@ -15,28 +46,8 @@
    display: none;
 }
 
-.left {
-   top: 40%;
-   left: 0;
-}
-
-.right {
-   top: 40%;
-   right: 0;
-}
-
-.up {
-   top: 0;
-   right: 48%;
-}
-
-.down {
-   bottom: 0;
-   right: 48%;
-}
-
 @media (max-width: 479px){
-   .up, .down {
-      right: 43.5%;
+   .ArrowLink {
+      font-size: 8em;
    }
 }

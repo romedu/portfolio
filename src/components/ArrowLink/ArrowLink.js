@@ -11,9 +11,11 @@ const ArrowLink = ({url, direction, disabled, title}) => {
    };
 
    return (
-      <Link to={url} className={`ArrowLink ${disabled ? "DisabledArrow" : direction}`} title={title}>
-         {directions[direction]}
-      </Link>
+      <div className={`ArrowContainer ${disabled ? "DisabledArrow" : direction}`}>
+         <Link to={url} className="ArrowLink" title={title}>
+            {directions[direction]}
+         </Link>
+      </div>
    )
 }
 

@@ -32,10 +32,21 @@
    .Icon {
       width: 10vh;
       height: 10vh;
-      margin: 2vh 7vh;
+      margin: 2vh 4vh;
+   }
+
+   .BigIcon {
+      width: 12vh;
+      height: 12vh;
    }
 
    .IconCircle {
-      margin-bottom: 5vh;
+      padding: 6vh;
+      margin-bottom: 4vh;
+      text-align: center;
+   }
+
+   .IconCircle:last-of-type {
+      margin-bottom: 0;
    }
 }
