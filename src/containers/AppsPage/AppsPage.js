@@ -16,6 +16,19 @@ class AppsPage extends Component {
             {appType} = match.params;
 
       if(appType !== "mpa" && appType !== "spa") return history.push("/");
+      this.getAppsData();      
+   }
+
+   componentDidUpdate(prevProps, prevState){
+      const {location} = this.props,
+            {isLoading, appsList} = this.state;
+
+      if(location !== prevProps.location) this.setState({isLoading: true}, this.getAppsData);
+      else if(isLoading && prevState.appsList !== appsList) this.setState({isLoading: false});
+   }
+
+   getAppsData = () => {
+      const {appType} = this.props.match.params;
 
       FirebaseDB.collection("apps").where("type", "==", appType).get()
       .then(querySnapshot => {
@@ -24,12 +37,6 @@ class AppsPage extends Component {
          this.setState({appsList});
       })
       .catch(error => console.log(error));
-   }
-
-   componentDidUpdate(prevProps, prevState){
-      const {isLoading, appsList} = this.state;
-
-      if(isLoading && prevState.appsList !== appsList) this.setState({isLoading: false});
    }
 
    render(){
