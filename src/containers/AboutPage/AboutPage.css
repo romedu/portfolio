@@ -3,7 +3,7 @@
    padding-top: 15vh;
 }
 
-@media (max-width: 449px){
+@media (max-width: 479px){
    .AboutPage {
       height: 69.5vh;
    }
