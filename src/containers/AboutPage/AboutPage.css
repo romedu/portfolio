@@ -8,7 +8,17 @@
       height: 69.5vh;
    }
 
+   .AboutPage h1 {
+      font-size: 2.8em;
+   }
+
+   .AboutPage h2 {
+      margin-top: 8vh;
+      font-size: 1.6em;
+   }
+
    .JokeBlock {
       padding-top: 4vh;
+      font-size: 1.2em;
    }
 }

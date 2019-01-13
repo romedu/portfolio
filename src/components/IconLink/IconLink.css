@@ -30,19 +30,17 @@
 
 @media (max-width: 849px){
    .Icon {
-      width: 10vh;
-      height: 10vh;
-      margin: 2vh 4vh;
+      display: none;
    }
 
    .BigIcon {
-      width: 12vh;
-      height: 12vh;
+      width: 14vh;
+      height: 14vh;
    }
 
    .IconCircle {
       padding: 6vh;
-      margin-bottom: 4vh;
+      margin-top: 5vh;
       text-align: center;
    }
 

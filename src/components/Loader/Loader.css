@@ -18,3 +18,11 @@
       transform: rotate(360deg);
    }
 }
+
+@media (max-width: 849px){
+   .Loader {
+      width: 20vw;
+      height: 20vw;
+      margin: 10vh 35vw 0;
+   }
+}

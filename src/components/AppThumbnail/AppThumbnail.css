@@ -40,6 +40,10 @@
       padding-top: 6vh;
    }
 
+   .AppThumbnail {
+      margin-bottom: 3vh;
+   }
+
    .AppThumbnail:last-child {
       margin-bottom: 0;
    }

@@ -7,9 +7,9 @@ const ContactPage = props => {
    const {availWidth: width} = window.screen;
 
    return (
-      <div className="ContactPage Container">
+      <div className="ContactPage">
          <ArrowLink url={width > 849 ? "/tech" : "/my-projects/spa"} direction="up" title={width > 849 ? "My Stack" : "Multiple Page Apps"} />
-         <h2 style={{fontSize: "2em"}}>
+         <h2>
             Let's get in touch
          </h2>
          <div className="BigIconList">

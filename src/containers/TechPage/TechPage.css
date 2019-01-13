@@ -13,6 +13,10 @@
       height: fit-content;
    }
 
+   .TechPage > h2 {
+      font-size: 2.3em;
+   }
+
    .TableList {
       flex-direction: column;
       align-items: center;

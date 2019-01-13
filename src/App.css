@@ -19,9 +19,7 @@ h1, h2, h3 {
 @media (max-width: 549px){
    .App {
       height: fit-content;
-   }
-
-   .Container:last-of-type {
-      padding-bottom: 7vh;
+      width: 90vw;
+      padding: 0 5vw;
    }
 }
