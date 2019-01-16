@@ -32,7 +32,7 @@ class AboutPage extends Component {
             );
 
       return (
-         <div className="AboutPage Container">
+         <div className="AboutPage Container" style={{height: !isLoading && !randomJoke ? "64vh" : "fit-content"}}>
             <h1>
                Hello, my name is Roberto Meran
             </h1>

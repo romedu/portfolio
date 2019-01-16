@@ -4,12 +4,9 @@
 }
 
 @media (max-width: 479px){
-   .AboutPage {
-      height: 69.5vh;
-   }
-
    .AboutPage h1 {
       font-size: 2.8em;
+      margin-top: 0;
    }
 
    .AboutPage h2 {
