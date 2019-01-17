@@ -1,6 +1,11 @@
+.AboutPage h1 {
+   font-size: 2.5em;
+}
+
 .JokeBlock {
    text-align: center;
-   padding-top: 15vh;
+   padding-top: 12vh;
+   font-size: 1.1em;
 }
 
 @media (max-width: 479px){
