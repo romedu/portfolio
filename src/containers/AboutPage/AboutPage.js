@@ -36,7 +36,7 @@ class AboutPage extends Component {
             <h1 className="animated fadeInDown">
                Hello, my name is Roberto Meran
             </h1>
-            <h2 className="animated bounceInRight">
+            <h2 className="animated zoomIn">
                I'm a Software Engineer student
                <br />
                and a Full Stack Web Developer
