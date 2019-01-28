@@ -24,6 +24,7 @@ class AboutPage extends Component {
 
    render(){
       const {isLoading, randomJoke} = this.state,
+            {availWidth: width} = window.screen,
             randomJokeBlock = randomJoke && (
                <div className="JokeBlock animated fadeInUp">
                   <h3> Random joke: </h3>
@@ -36,7 +37,7 @@ class AboutPage extends Component {
             <h1 className="animated fadeInDown">
                Hello, my name is Roberto Meran
             </h1>
-            <h2 className="animated zoomIn">
+            <h2 className={`animated ${width < 849 ? "zoomIn" : "slideInRight"}`}>
                I'm a Software Engineer student
                <br />
                and a Full Stack Web Developer

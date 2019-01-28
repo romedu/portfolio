@@ -4,10 +4,11 @@ import images from "../../images";
 import "./AppThumbnail.css";
 
 const AppThumbnail = ({title, logo, color, url, repos}) => {
-   const reposLink = repos && repos.map(repo => <IconLink key={repo + 1} url={repo} iconName="github" />);
+   const reposLink = repos && repos.map(repo => <IconLink key={repo + 1} url={repo} iconName="github" />),
+         {availWidth: width} = window.screen;
    
    return (
-      <div className="AppThumbnail animated flipInX">
+      <div className={`AppThumbnail animated ${width > 849 ? "flipInX" : "bounceIn"}`}>
          <a href={url} target="_blank" rel="noopener noreferrer" className="AppLink" style={{backgroundColor: color}} >
             <h3>
                {title}
