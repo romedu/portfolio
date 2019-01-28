@@ -5,7 +5,7 @@ const ContentsTable = ({title, items}) => {
    const listItems = items.map((item, index) => <li key={index + item} style={{}}> {item} </li>);
 
    return (
-      <div className="ContentsTable">
+      <div className="ContentsTable animated fadeInUp">
          <h3>
             {title}:
          </h3>

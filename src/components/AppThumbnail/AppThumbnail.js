@@ -7,7 +7,7 @@ const AppThumbnail = ({title, logo, color, url, repos}) => {
    const reposLink = repos && repos.map(repo => <IconLink key={repo + 1} url={repo} iconName="github" />);
    
    return (
-      <div className="AppThumbnail">
+      <div className="AppThumbnail animated flipInX">
          <a href={url} target="_blank" rel="noopener noreferrer" className="AppLink" style={{backgroundColor: color}} >
             <h3>
                {title}

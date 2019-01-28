@@ -2,10 +2,15 @@
    font-size: 2.5em;
 }
 
+.AboutPage h2 {
+   animation-delay: 0.5s;
+}
+
 .JokeBlock {
    text-align: center;
    padding-top: 12vh;
    font-size: 1.1em;
+   animation-delay: 1s;
 }
 
 @media (max-width: 479px){

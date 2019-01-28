@@ -53,9 +53,11 @@ class AppsPage extends Component {
                                                       <ArrowLink url="/my-projects/spa" direction="down" title="Single Page Apps" /> 
                                                    </Fragment>;
 
+      window.scrollTo(0,0);
+
       return (
          <div className="AppsPage Container" style={{height: (appsList.length === 0 || isLoading) && "100vh"}}>
-            <h2>
+            <h2 className="animated fadeInDown">
                {title}
             </h2>
             {isLoading ? <Loader /> : <AppsList list={appsList} />}

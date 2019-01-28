@@ -11,7 +11,7 @@ const TechPage = props => {
 
    return (
       <div className="TechPage Container">
-         <h2>
+         <h2 className="animated fadeInDown">
             This is how my tech stack looks like:
          </h2>
          <div className="TableList">

@@ -5,11 +5,12 @@ import "./ContactPage.css";
 
 const ContactPage = props => {
    const {availWidth: width} = window.screen;
+   window.scrollTo(0,0);
 
    return (
       <div className="ContactPage">
          <ArrowLink url={width > 849 ? "/tech" : "/my-projects/spa"} direction="up" title={width > 849 ? "My Stack" : "Multiple Page Apps"} />
-         <h2>
+         <h2 className="animated rotateInDownLeft">
             Let's get in touch
          </h2>
          <div className="BigIconList">

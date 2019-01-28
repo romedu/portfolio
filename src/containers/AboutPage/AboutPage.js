@@ -25,7 +25,7 @@ class AboutPage extends Component {
    render(){
       const {isLoading, randomJoke} = this.state,
             randomJokeBlock = randomJoke && (
-               <div className="JokeBlock">
+               <div className="JokeBlock animated fadeInUp">
                   <h3> Random joke: </h3>
                   {randomJoke}
                </div>
@@ -33,10 +33,10 @@ class AboutPage extends Component {
 
       return (
          <div className="AboutPage Container" style={{height: !isLoading && !randomJoke ? "64vh" : "fit-content"}}>
-            <h1>
+            <h1 className="animated fadeInDown">
                Hello, my name is Roberto Meran
             </h1>
-            <h2>
+            <h2 className="animated bounceInRight">
                I'm a Software Engineer student
                <br />
                and a Full Stack Web Developer

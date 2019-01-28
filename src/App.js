@@ -4,6 +4,7 @@ import AboutPage from "./containers/AboutPage/AboutPage";
 import TechPage from "./containers/TechPage/TechPage";
 import AppsPage from "./containers/AppsPage/AppsPage";
 import ContactPage from "./containers/ContactPage/ContactPage";
+import "animate.css";
 import './App.css';
 
 class App extends Component {
