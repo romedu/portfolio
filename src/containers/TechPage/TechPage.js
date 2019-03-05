@@ -5,9 +5,9 @@ import "./TechPage.css";
 
 const TechPage = props => {
    const {availWidth: width} = window.screen,
-         technologies = ["Javascript", "NodeJS", "CSS", "HTML", "MongoDB", "Java", "Firebase", "MySQL"],
-         libraries = ["React", "Redux", "Express", "Jquery", "Bootstrap", "SemanticUI"],
-         futurePlans = ["Spring", "GraphQL", "Mobile Dev", "PWA", "Webpack", "Elasticsearch"];
+         technologies = ["Javascript", "NodeJS", "CSS", "HTML", "MongoDB", "Java", "Firebase", "MySQL", "PWA"],
+         libraries = ["React.js", "Redux.js", "Express", "Jquery", "Bootstrap", "SemanticUI"],
+         futurePlans = ["Spring", "GraphQL", "React Native", "Webpack", "Elasticsearch", "Docker"];
 
    return (
       <div className="TechPage Container">
