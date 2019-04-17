@@ -13,6 +13,31 @@
    justify-content: space-around;
 }
 
+.DownloadButton {
+   display: block;
+   width: fit-content;
+   margin: 11vh auto 0;
+   padding: 3vh 2vw;
+   background-color: black;
+   color: lightgray;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 4px;
+   box-shadow: 2px 2px black;
+   transition: all 0.15s ease-in 0s;
+   transition: box-shadow 0.05s ease-in 0s;
+   animation-delay: 1.5s;
+}
+
+.DownloadButton:hover {
+   background-color: rgb(212, 207, 207);
+   color: black;
+}
+
+.DownloadButton:active {
+   box-shadow: 0.5px 0.5px black;
+}
+
 @media (max-width: 849px){
    .ContactPage {
       height: fit-content;
