@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from "react";
-import FirebaseDB from "../../firebaseInstance";
+import firebaseDB from "../../firebaseInstance";
 import AppsList from "../../components/AppsList/AppsList";
 import ArrowLink from "../../components/ArrowLink/ArrowLink";
 import Loader from "../../components/Loader/Loader";
@@ -30,7 +30,7 @@ class AppsPage extends Component {
    getAppsData = () => {
       const {appType} = this.props.match.params;
 
-      FirebaseDB.collection("apps").where("type", "==", appType).get()
+      firebaseDB.collection("apps").where("type", "==", appType).get()
       .then(querySnapshot => {
          const appsList = [];
          querySnapshot.forEach(doc => appsList.push({id: doc.id, data: doc.data()}));

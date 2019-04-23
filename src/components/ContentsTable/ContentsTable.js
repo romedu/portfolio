@@ -2,7 +2,7 @@ import React from "react";
 import "./ContentsTable.css";
 
 const ContentsTable = ({title, items}) => {
-   const listItems = items.map((item, index) => <li key={index + item} style={{}}> {item} </li>);
+   const listItems = items && items.map((item, index) => <li key={index + item} style={{}}> {item} </li>);
 
    return (
       <div className="ContentsTable animated fadeInUp">

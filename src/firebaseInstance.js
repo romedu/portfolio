@@ -1,4 +1,5 @@
-const firebase = require("firebase");
+import * as firebase from "firebase/app";
+import "firebase/firestore";
 
 firebase.initializeApp({
    apiKey: "AIzaSyDM1b5xHhvNkIPMs2cQuEoAZNGsKMfoNvA",
